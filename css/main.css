@@ -1,0 +1,24 @@
+:root {
+    --blue: #0ea5e9;
+    --yellow: #eab308;
+    --background-grey: #e2e8f0;
+}
+body {
+    height: 100vh;
+
+    display: grid;
+    grid-template: 200px 1fr / 300px 1fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+}
+
+main {
+    background-color: var(--background-grey);
+}
+
+aside{
+    background-color: var(--blue);
+
+    grid-area: aside;
+}
