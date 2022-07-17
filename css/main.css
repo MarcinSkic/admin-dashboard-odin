@@ -4,6 +4,7 @@
 :root {
     --blue: #0ea5e9;
     --yellow: #eab308;
+    --gray: #cbd5e1;
     --background-grey: #e2e8f0;
 }
 
@@ -17,6 +18,77 @@ body {
     grid-template-areas: 
     "aside header"
     "aside main";
+}
+
+.top-side {
+    height: 50%;
+
+    margin: 0 40px;
+
+    display: grid;
+    grid-template-columns: 1fr min-content min-content max-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    padding: 0  30px 0 0;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content 1fr;
+    gap: 15px;
+}
+
+.search-bar > input {
+    border: none;
+    height: 2rem;
+    border-radius: 20px;
+    background-color: var(--background-grey);
+    
+}
+
+
+.bottom-side {
+    height: 50%;
+    margin: 0 40px;
+
+    display: grid;
+    grid-template-columns: 100px 1fr repeat(3,120px);
+    align-items: center;
+    gap: 30px;
+}
+
+.bottom-side button {
+    color: aliceblue;
+    background-color: var(--blue);
+    
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.user-welcome {
+    height: 90%;
+    display: grid;
+    grid-template: 30% 70% / 100px 1fr;
+    
+    align-items: center;
+}
+
+.user-welcome img {
+    grid-row: 1 / -1;
+}
+
+.welcoming-sentence > div:first-child {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    align-self: flex-end;
+}
+
+.welcoming-sentence > div:last-child {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 main {
