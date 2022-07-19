@@ -70,8 +70,6 @@ body {
 
 .user-welcome {
     height: 90%;
-    display: grid;
-    grid-template: 30% 70% / 100px 1fr;
     
     align-items: center;
 }
@@ -93,6 +91,48 @@ body {
 
 main {
     background-color: var(--background-grey);
+    padding: 0 30px;
+
+    display: grid;
+    grid-template: 
+        "projects announcements" 1fr
+        "projects trending" 1fr /
+        1fr 300px;
+    gap: 0 30px;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects .container {
+    display: grid;
+    gap: 40px;
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+.projects .card {
+    background-color: white;
+
+    padding: 30px;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+
+    border-radius: 10px;
+    box-shadow: inset 10px 0 #ffd000;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card .icons {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
 }
 
 aside{
@@ -107,8 +147,16 @@ aside{
     gap: 60px;
 }
 
+aside header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+
+    margin: 0 10px;
+}
+
 h1 {
-    margin: 15px 0 0;
     padding: 0 10px;
 }
 
