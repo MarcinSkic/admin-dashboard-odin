@@ -108,7 +108,7 @@ main {
 
 .projects .container {
     display: grid;
-    gap: 40px;
+    gap: 30px;
     grid-auto-rows: 250px;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
 }
@@ -127,6 +127,7 @@ main {
 
 h3 {
     margin: 0;
+    margin-bottom: 3px;
 }
 
 p {
@@ -157,13 +158,32 @@ p {
 }
 
 .announcements .annon {
-    padding: 15px 10px;
+    padding: 20px 10px;
 
     background-color: white;
 }
 
-.annon div {
-    color: var(--font-grey);
+.trending .container {
+    background-color: white;
+
+    padding: 20px 30px;
+
+    border-radius: 10px;
+}
+
+.trending .user {
+    padding: 20px 10px;
+
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;
+    gap: 5px;
+
+    text-align: left;
+}
+
+.user h3 {
+    font-size: 0.9rem;
 }
 
 aside{
