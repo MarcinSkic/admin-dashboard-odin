@@ -5,6 +5,7 @@
     --blue: #0ea5e9;
     --yellow: #eab308;
     --gray: #cbd5e1;
+    --font-grey: #4b5563;
     --background-grey: #e2e8f0;
 }
 
@@ -124,8 +125,13 @@ main {
     box-shadow: inset 10px 0 #ffd000;
 }
 
-.card h3 {
+h3 {
     margin: 0;
+}
+
+p {
+    margin: 0;
+    color: var(--font-grey);
 }
 
 .card .icons {
@@ -133,6 +139,31 @@ main {
     display: grid;
     grid-auto-flow: column;
     gap: 10px;
+}
+
+.announcements .background {
+    background-color: white;
+
+    padding: 20px 30px;
+
+    border-radius: 10px;
+}
+
+.announcements .container {
+    background-color: var(--background-grey);
+    
+    display: grid;
+    gap: 2px;
+}
+
+.announcements .annon {
+    padding: 15px 10px;
+
+    background-color: white;
+}
+
+.annon div {
+    color: var(--font-grey);
 }
 
 aside{
