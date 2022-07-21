@@ -29,7 +29,7 @@ body {
     display: grid;
     grid-template-columns: 1fr min-content min-content max-content;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .search-bar {
@@ -55,9 +55,9 @@ body {
     margin: 0 40px;
 
     display: grid;
-    grid-template-columns: 100px 1fr repeat(3,120px);
+    grid-template-columns: min-content 1fr repeat(3,120px);
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .bottom-side button {
@@ -139,7 +139,7 @@ p {
     justify-self: end;
     display: grid;
     grid-auto-flow: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 .announcements .background {
@@ -214,11 +214,21 @@ h1 {
 .app-navigation, 
 .extra-navigation {
     display: grid;
-    gap: 15px;
+    gap: 25px;
 }
 
-nav div {
-    padding: 0 20px;
-    font-size: 1.2rem;
+nav > div {
+    padding: 0 24px;
+    font-size: 1.3rem;
     font-weight: 700;
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+}
+
+nav > div > div {
+    padding: 0 20px;
 }
